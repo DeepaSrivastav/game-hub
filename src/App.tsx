@@ -24,7 +24,10 @@ function App() {
       <Show above="lg">
         {/*items inside this will be rendered for devices with screen sizes lg and above. */}
         <GridItem area="aside" paddingX={5}>
-          <GenreList onSelectGenre={(genre) => setSelectedGenre(genre)} />
+          <GenreList
+            selectedGenre={selectedGenre}
+            onSelectGenre={(genre) => setSelectedGenre(genre)}
+          />
         </GridItem>
       </Show>
 
